@@ -31,6 +31,7 @@ jobs:
             port: ${{ secrets.PORT }}
             script: |
               cd /root/node.js-github-action
+              pm2 stop github-action
               git pull
               npm i
               npm test
