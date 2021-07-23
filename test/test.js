@@ -23,7 +23,7 @@ describe("GET /", ()=>{
             .end((err, response) => {
                 response.should.have.status(200);
                 response.should.to.be.html;
-                response.text.should.be.equal("Hello World!");
+                response.text.should.be.equal("Hello World hi!");
                 done();
             });
     })
